@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 11:35:27 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODM2OzIwMjYtMDQtMTQ7IjExOjA3OjQzICI7Mjg1OA=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODM2OzIwMjYtMDQtMTQ7IjExOjM1OjI3ICI7MjsyOTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Real" array="False" size=""/>
+            <declare name="sabeJava, sabePy, sabixaum" type="String" array="False" size=""/>
+            <output expression="&quot;Qual &#233; a idade do candidato?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;O candidato sabe JavaScript? (s/n)&quot;" newline="True"/>
+            <input variable="sabeJava"/>
+            <output expression="&quot;O candidato sabe Python (s/n)?&quot;" newline="True"/>
+            <input variable="sabePy"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <if expression="sabePy = &quot;s&quot;">
+                        <then>
+                            <output expression="&quot;Seu curr&#237;culo foi aceito!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="sabeJava = &quot;n&quot;">
+                                <then>
+                                    <output expression="&quot;curriculo rejeitado&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Houve um erro de digita&#231;&#227;o, certifique-se que usou s ou n nas respostas.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Seu curr&#237;culo foi rejeitado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

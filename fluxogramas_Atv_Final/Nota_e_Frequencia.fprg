@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 10:33:51 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODM2OzIwMjYtMDQtMTQ7IjEwOjI4OjAwICI7Mjg1Mw=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODM2OzIwMjYtMDQtMTQ7IjEwOjMzOjUxICI7MTsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota, frequencia" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a nota do aluno (0-10): &quot;" newline="True"/>
+            <input variable="nota"/>
+            <output expression="&quot;Agora, digite a frequencia do aluno (em %): &quot;" newline="True"/>
+            <input variable="frequencia"/>
+            <if expression="nota &gt;= 7 and frequencia &gt;= 75">
+                <then>
+                    <output expression="&quot;O aluno foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O aluno foi reprovado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

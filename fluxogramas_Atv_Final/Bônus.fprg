@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 02:02:26 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODM2OzIwMjYtMDQtMTQ7IjAxOjIzOjEyICI7Mjg1MQ=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODM2OzIwMjYtMDQtMTQ7IjAyOjAyOjI2ICI7MTsyOTYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pre&#231;o" type="Real" array="False" size=""/>
+            <declare name="vip, cupom, parcelas" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o pre&#231;o do produto: R$ &quot;" newline="True"/>
+            <input variable="pre&#231;o"/>
+            <output expression="&quot;o usu&#225;rio tem o VIP (s/N): &quot;" newline="True"/>
+            <input variable="vip"/>
+            <output expression="&quot;O usu&#225;rio tem parcelas atrasadas (S/N): &quot;" newline="True"/>
+            <input variable="parcelas"/>
+            <output expression="&quot;O usu&#225;rio tem cupons (S/N)? &quot;" newline="True"/>
+            <input variable="cupom"/>
+            <if expression="vip = &quot;s&quot; and pre&#231;o &gt; 500">
+                <then>
+                    <output expression="&quot;Superdesconto aplicado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cupom = &quot;s&quot; and parcelas = &quot;n&quot;">
+                        <then>
+                            <output expression="&quot;Superdesconto aplicado!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Nenhum desconto foi aplicado. &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
